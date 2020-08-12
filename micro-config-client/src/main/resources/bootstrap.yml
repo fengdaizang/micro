@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+  application:
+    name: config-client
+  cloud:
+    config:
+      uri: http://127.0.0.1:7002
+      label: master
+      profile: dev
