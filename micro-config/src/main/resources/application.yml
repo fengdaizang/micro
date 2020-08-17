@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: config-server  # 应用名称
+  profiles:
+    active: dev
   cloud:
     config:
       server:
@@ -11,12 +13,3 @@ spring:
           uri: https://github.com/fengdaizang/micro-config #配置文件所在仓库
           default-label: master #配置文件分支
           search-paths: config  #配置文件所在根目录
-
-eureka:
-  client:
-    serviceUrl:
-      register-with-eureka: true
-      fetch-registry: true
-      defaultZone: http://127.0.0.1:7001/eureka/
-  instance:
-    preferIpAddress: true

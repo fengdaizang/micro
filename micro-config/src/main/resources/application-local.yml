@@ -1,0 +1,8 @@
+eureka:
+  client:
+    serviceUrl:
+      register-with-eureka: true
+      fetch-registry: true
+      defaultZone: http://127.0.0.1:7001/eureka/
+  instance:
+    preferIpAddress: true
