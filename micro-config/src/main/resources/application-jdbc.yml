@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: mima123456
+    url: jdbc:mysql://120.78.121.110:3306/config?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+    username: root
+  cloud:
+    config:
+      server:
+        jdbc:
+          sql: SELECT `key`,`value` FROM properties WHERE application=? AND PROFILE=? AND label=?
