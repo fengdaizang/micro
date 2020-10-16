@@ -8,6 +8,7 @@
         <module>micro-eureka</module>
         <module>micro-config-client</module>
         <module>micro-common</module>
+        <module>micro-gateway</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
