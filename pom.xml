@@ -9,6 +9,7 @@
         <module>micro-config-client</module>
         <module>micro-common</module>
         <module>micro-gateway</module>
+        <module>micro-fabric-driver</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
